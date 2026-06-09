@@ -181,6 +181,10 @@ footer li img{
 /* --- MOBILE (ATÉ 767px) --- */
 
 @media screen and (max-width:767px) {
+    html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
     .menu-hamburguer {
         width: 32px;
         display: block;
