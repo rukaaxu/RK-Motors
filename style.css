@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header, footer{
+    background-color: #192a56;
+    padding-top: 16px;
+    color: #fff;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header > .container,
+footer > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #575fcf ;
+    padding: 16px 0;
+    display: block;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.menu-hamburguer{
+    width: 32px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    width: 100%;
+    margin-right: 24px;
+}
+
+section{
+    padding: 48px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+.lista-veiculos{
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.lista-veiculos li{
+    list-style: none;
+    width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-veiculos li img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.lista-veiculos li h3{
+    margin: 16px 0;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: oblique;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.lista-veiculos li button:hover{
+    background-color: #37d78d;    
+}
+
+.price{
+    margin: 16px 0;
+    display: block;
+}
+
+.price del{
+    color: #ccc;
+    font-size: 14px;
+}
+
+.form-campo{
+    margin-bottom: 16px;
+}
+
+.form-campo label{
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 720px;
+}
+
+form button{
+max-width: 120px;
+}
+
+footer li{
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img{
+    height: 32px;
+}
+
+/* --- MOBILE (ATÉ 767px) --- */
+
+@media screen and (max-width:767px) {
+    .menu-hamburguer {
+        width: 32px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-hamburguer span{
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    nav {
+        background-color: #575fcf;
+        padding: 16px 0;
+        display: none;
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+    }
+
+    nav li{
+        display: block;
+        margin: 12px 0;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    nav li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    header > .container{
+        flex-wrap: wrap;
+    }
+
+    footer > .container{
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    #sobre-a-loja .container{
+        flex-direction: column;
+    }
+
+    #sobre-a-loja img{
+        margin-right: 0;
+        margin-bottom: 24px;
+        max-width: 100%;
+    }
+
+    .lista-veiculos {
+        justify-content: center;
+    }
+
+    .lista-veiculos li{
+        width: 100%;
+    }
+
+    form {
+        max-width: 600px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    form button {
+        max-width: 100%;
+    }
+}
+
+/* --- TABLET (DE 768px ATÉ 1023px) --- */
+
+@media screen and (min-width:768px) and (max-width: 1023px){
+    header > .container{
+        justify-content: center;
+    }
+
+    section h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .menu-hamburguer {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        background-color: #575fcf;
+        padding: 16px 0;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0 16px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    nav li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #sobre-a-loja .container{
+        display: flex;
+        align-items: center;
+    }
+
+    #sobre-a-loja img {
+        max-width: 40%;
+        margin-right: 24px;
+    }
+
+    .lista-veiculos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .lista-veiculos li {
+        width: 48%;
+    }
+
+    form {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    form button {
+        max-width: 100%;
+    }
+
+        footer > .container{
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    header > .container{
+        justify-content: center;
+    }
+    .menu-hamburguer {
+        display: none; /* Oculta o hambúrguer no desktop */
+    }
+
+    nav {
+        background-color: #575fcf;
+        padding: 16px 0;
+        display: block; /* MUDANÇA: Exibe normalmente sem precisar de !important */
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 16px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    nav li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #sobre-a-loja .container {
+        display: flex;
+    }
+
+    #sobre-a-loja img {
+        max-width: 400px;
+        margin-right: 24px;
+    }
+
+    .lista-veiculos {
+        justify-content: space-between;
+    }
+
+    .lista-veiculos li {
+        width: 30%;
+    }
+
+    form {
+        max-width: 720px;
+    }
+
+    form button {
+        max-width: 120px;
+    }
+}
+
