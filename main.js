@@ -1,8 +1,6 @@
 $(document).ready(function(){
             $('#carrossel-imagens').slick({
                 autoplay: true,
-                arrows: false,
-                adaptiveHeight: true,
             });
 
             $('.menu-hamburguer').click(function(){
